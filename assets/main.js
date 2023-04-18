@@ -46,3 +46,22 @@ const team = [
         image: 'barbara-ramos-graphic-designer.jpg',
     },
     ];
+
+    for (let i = 0; i < team.length; i++ ){
+        // console.log( team[i] )
+    
+        let oggetti = team[i]
+        console.log(oggetti)
+    
+        document.querySelector('.row').innerHTML += 
+        
+        `<div class="card col-4">
+            <img src= "assets/img/${oggetti.image}"  class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${oggetti.name}</h5>
+                <p class="card-text">${oggetti.role}</p>
+            </div>
+        </div>`
+    }
+
+
